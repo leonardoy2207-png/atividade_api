@@ -1,0 +1,93 @@
+:root {
+  --bg-top: #0f1a12;
+  --bg-bottom: #eef2ea;
+  --accent: #3f8f2f;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(63, 143, 47, 0.35), transparent),
+    linear-gradient(180deg, var(--bg-top) 0%, #1d3321 28%, var(--bg-bottom) 28%);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.page-header {
+  color: #f3f8f0;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.page-header h1 {
+  font-weight: 700;
+}
+
+.page-header p {
+  opacity: 0.85;
+  max-width: 36rem;
+}
+
+.search-panel {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 40px rgba(15, 26, 18, 0.2);
+  overflow: hidden;
+}
+
+.nav-tabs {
+  background: #f7faf6;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  color: #5a6b5a;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--accent);
+  background: #fff;
+  box-shadow: inset 0 -3px 0 var(--accent);
+}
+
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: #2f6e23;
+  border-color: #2f6e23;
+  color: #fff;
+}
+
+.result-card {
+  border: 1px solid #dde6da;
+  border-radius: 0.75rem;
+}
+
+.frase {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+footer {
+  color: #1d3321;
+}
+
+.detail-card {
+  border: 1px solid #dde6da;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.character-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center 25%;
+  background: #e7eee5;
+}
